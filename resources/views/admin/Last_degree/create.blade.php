@@ -10,20 +10,16 @@
               @include('admin/massages/massage')
 
                @include('admin/massages/error')
-            <form role="form" action="admin.batch.store" method="post">
+            <form role="form" action="{{ route('admin.Last-degree.store') }}" method="post">
              {{ csrf_field() }}
              {{ method_field('') }}
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Create a New Batch </label>
+                  <label for="exampleInputEmail1">Create a New Last Degree </label>
                   <input type="text" class="form-control"  name="name" id="exampleInputEmail1" 
-                   placeholder="ICAP - 200">
+                   placeholder=" EX : HSC,Hon's,Master's ">
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Batch Time Shift</label>
-                  <input type="text" class="form-control"  name="shift_time" id="exampleInputEmail1" 
-                   placeholder=" Ex : Morning">
-                </div>
+               
                 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

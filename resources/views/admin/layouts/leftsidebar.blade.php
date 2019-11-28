@@ -27,18 +27,58 @@
         <li class="header">MAIN NAVIGATION</li>
         <li><a href="{{ route('admin.dashboard') }} "><i class="fa fa-dashboard text-red"></i> <span>Dashboard</span></a></li>
  
-        {{-- <li class=" treeview">
+        <li class=" treeview">
           <a href="#">
-            <i class="fa  fa-list text-yellow"></i> <span>SubCategory</span>
+            <i class="fa  fa-list text-yellow"></i> <span></span>Batch</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{ route('admin.subcategory.create') }}"><i class="fa fa-circle-o text-aqua"></i><span>Create A New SubCategory </span></a></li>
-            <li><a href="{{ route('admin.subcategory.index') }}"><i class="fa fa-circle-o text-aqua"></i><span>View all SubCategory </span></a></li>
+            <li><a href="{{ route('admin.batch.create') }}"><i class="fa fa-circle-o text-aqua"></i><span>Create A Batch </span></a></li>
+            <li><a href="{{ route('admin.batch.index') }}"><i class="fa fa-circle-o text-aqua"></i><span>View all Batch </span></a></li>
           </ul>
-        </li> --}}
+        </li>
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa  fa-list text-yellow"></i> <span></span>Student Section</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('admin.all_pending_student') }}"><i class="fa fa-circle-o text-aqua"></i><span>Pending Students </span></a></li>
+            <li><a href="{{ route('admin.all_complete_student') }}"><i class="fa fa-circle-o text-aqua"></i><span>Complete Students </span></a></li>
+          </ul>
+        </li>
+
+
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa  fa-list text-yellow"></i> <span>Grades && Marks</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('admin.Result.create') }}"><i class="fa fa-circle-o text-aqua"></i><span>Create A New Grades && Marks </span></a></li>
+            <li><a href="{{ route('admin.Result.index') }}"><i class="fa fa-circle-o text-aqua"></i><span>View all Grades && Marks </span></a></li>
+          </ul>
+        </li>
+
+
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa  fa-list text-yellow"></i> <span>Last Degree </span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('admin.Last-degree.create') }}"><i class="fa fa-circle-o text-aqua"></i><span>Create A New Last Degree </span></a></li>
+            <li><a href="{{ route('admin.Last-degree.index') }}"><i class="fa fa-circle-o text-aqua"></i><span>View all Last Degree </span></a></li>
+          </ul>
+        </li>
 
 
         {{-- <li><a href="#"><span>Warning</span></a></li>
